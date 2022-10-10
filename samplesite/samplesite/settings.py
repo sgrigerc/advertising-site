@@ -146,5 +146,15 @@ SESSION_COOKIE_AGE = 60 * 60 * 24 * 30
 LOGIN_REDIRECT_URL = 'users/'
 LOGIN_URL = 'login'
 
-SOCIAL_AUTH_GITHUB_KEY = 'YOUR GITHUB KEY'
-SOCIAL_AUTH_GITHUB_SECRET = 'YOUR GITHUB SECRET KEY'
+from dotenv import load_dotenv
+load_dotenv()  # loads the configs from .env
+
+SECRET_KEY = str(os.getenv('SECRET_KEY'))
+
+# social auth configs for github
+SOCIAL_AUTH_GITHUB_KEY = str(os.getenv('GITHUB_KEY'))
+SOCIAL_AUTH_GITHUB_SECRET = str(os.getenv('GITHUB_SECRET'))
+
+# social auth configs for google
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = str(os.getenv('GOOGLE_KEY'))
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = str(os.getenv('GOOGLE_SECRET'))
