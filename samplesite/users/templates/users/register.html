@@ -24,51 +24,28 @@
                                         </button>
                                     </div>
                                 {% endif %}
-                                <div class="form-row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">First Name</label>
-                                            {{ form.first_name }}
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">Last Name</label>
-                                            {{ form.last_name }}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="small mb-1">Username</label>
-                                            {{ form.username }}
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
+                                <div class="form-center">
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1">Email</label>
                                             {{ form.email }}
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1">Password</label>
                                             {{ form.password1 }}
                                             {{ form.errors.password }}
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <label class="small mb-1">Confirm Password</label>
                                             {{ form.password2 }}
-                                        </div>
+                                    </div>
                                     </div>
                                 </div>
-                                <div class="form-group mt-4 mb-0">
+                                <div class="form-group mt-4 mb-2 ml-3 mr-3">
                                     <button type="submit" class="col-md-12 btn btn-dark">Sign Up</button><br><br>
                                 </div>
                             </form>
